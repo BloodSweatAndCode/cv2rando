@@ -18,6 +18,7 @@ function getLocation({ objset, area, submap = 0 }) {
 
 module.exports = {
 	pre: true,
+    order: 2,
 	id: 'door-rando',
 	name: 'Door Rando',
 	description: 'All town and mansion doors are randomized',
@@ -106,7 +107,6 @@ module.exports = {
 		pm.patches.forEach(patch => {
 			if (patch == "nomusic") {
 				music = "";
-				console.log("NO MUSIC!");
 			}
 		});
 
